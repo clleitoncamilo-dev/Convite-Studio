@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* MENU */
+.controls {
+  width: 250px;
+  background: #111;
+  color: white;
+  padding: 20px;
+}
+
+.controls input,
+.controls button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+}
+
+/* CANVAS */
+.canvas {
+  flex: 1;
+  background: #f5f5f5;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ELEMENTOS */
+.canvas h1,
+.canvas p,
+.canvas img {
+  position: absolute;
+  cursor: pointer;
+}
+
+/* SELEÇÃO */
+.selecionado {
+  outline: 2px dashed red;
+}
+
+/* IMAGEM */
+.canvas img {
+  max-width: 200px;
+}
+
+/* REDIMENSIONAR */
+.resizable {
+  resize: both;
+  overflow: auto;
+  display: inline-block;
+}

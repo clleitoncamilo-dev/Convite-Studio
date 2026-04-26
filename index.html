@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Editor de Convite</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- MENU -->
+    <div class="controls">
+      <h2>Editor</h2>
+
+      <input id="inputNome" placeholder="Nome do evento">
+      <input id="inputMensagem" placeholder="Mensagem">
+
+      <label>Cor do texto:</label>
+      <input type="color" id="corTexto">
+
+      <button onclick="atualizarTexto()">Atualizar Texto</button>
+      <button onclick="adicionarElemento()">Adicionar Texto</button>
+
+      <hr>
+
+      <label>Adicionar imagem:</label>
+      <input type="file" id="uploadImagem">
+      <button onclick="adicionarImagem()">Inserir Imagem</button>
+    </div>
+
+    <!-- CANVAS -->
+    <div class="canvas" id="canvas">
+      <h1 contenteditable="true" style="left: 100px; top: 100px;">
+        Nome do Evento
+      </h1>
+
+      <p contenteditable="true" style="left: 100px; top: 180px;">
+        Mensagem do convite...
+      </p>
+    </div>
+
+  </div>
+
+  <script src="js/editor.js"></script>
+</body>
+</html>
